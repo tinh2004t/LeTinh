@@ -41,6 +41,7 @@ nav {
     text-align: center;
     line-height: 60px;
     margin: 5px;
+    margin-top: 5px;
     color:rgba(176,179,184);
     text-decoration: none;
     border-radius: 8px;
@@ -56,6 +57,7 @@ nav {
     line-height: 60px;
     margin: 5px;
     margin-top: 5px;
+    color:rgba(176,179,184);
     text-decoration: none;
     color: rgb(46,136,255);
     border-radius: 0px;
