@@ -146,19 +146,20 @@ nav {
 }
 
 .shop >a >img {
-    width: 100%;
+    width: 95%;
     border-radius: 10px;
+    border: solid 1px black;
 }
 
 .cost {
     color: red;
-    font-size: 18px;
+    font-size: 24px;
     padding: 5px 0;
 }
 
 .item-name {
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 10px;
 }
 
