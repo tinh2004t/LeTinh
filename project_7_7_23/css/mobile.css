@@ -158,8 +158,9 @@ nav {
 }
 
 .item-name {
+    height: 40px;
     color: black;
-    font-size: 24px;
+    font-size: auto;
     padding-top: 10px;
 }
 
