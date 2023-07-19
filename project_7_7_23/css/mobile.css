@@ -33,27 +33,6 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, aquamarine 0px 8px 16px -8px;
 }
 
-.quen-ten {
-    display: none;
-    position: absolute;
-    background-color: white;
-    margin-left: 50px;
-    border: solid 2px;
-    border-top: 0;
-    border-radius: 0 10px 10px 10px;
-    width: 300px;
-}
-
-.quen-ten >li {
-    margin: 10px;
-}
-
-.quen-ten >li >a {
-    width: auto;
-    text-decoration: none;
-    font-size: 24px;
-}
-
 .btn-banner {
     color: rgb(138, 19, 138);
     text-decoration: none;
@@ -89,15 +68,18 @@ nav {
     display: inline-block;
     line-height: 50px;
     font-size: 24px;
-    text-decoration: none;
     color: rgb(85, 47, 121);
+}
+
+.nav-btn >a {
+    text-decoration: none;
 }
 
 .down-nav {
     display: block;
     position: absolute;
     background-color: white;
-    margin-left: 270px;
+    margin-left: 50px;
     border: solid 2px;
     border-top: 0;
     border-radius: 0 10px 10px 10px;
@@ -105,14 +87,21 @@ nav {
 }
 
 .btn-dwn-nav {
+    text-decoration: none;
+    padding-left: 50px;
+    text-align: left;
     display: block;
+}
+
+.down-nav {
+    display:none;
 }
 
 .down-nav >li {
     margin: 10px;
 }
 
-.quen-ten >li >a {
+.down-nav >li >a {
     width: auto;
     text-decoration: none;
     font-size: 24px;
@@ -123,8 +112,13 @@ nav {
     color: rgb(103, 58, 146);
 }
 
-.close:hover .quen-ten {
+.nav-btn:hover .down-nav {
     display: block;
+}
+
+.btn-dwn-nav:hover {
+    color: blueviolet;
+    background-color: rgb(106, 177, 206);
 }
 
 
@@ -135,6 +129,7 @@ nav {
 }
 
 .shop {
+    margin-bottom: 50px;
     display: block;
     width: 65%;
 }
@@ -152,19 +147,20 @@ nav {
 }
 
 .shop >a >img {
-    width: 100%;
+    width: 95%;
     border-radius: 10px;
 }
 
 .cost {
     color: red;
-    font-size: 18px;
+    font-size: 24px;
     padding: 5px 0;
 }
 
 .item-name {
+    height: 40px;
     color: black;
-    font-size: 24px;
+    font-size: auto;
     padding-top: 10px;
 }
 
@@ -196,5 +192,23 @@ nav {
 }
 
 .more-item:hover {
-    color: blue;
+    color: purple;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: rgb(106, 177, 206);
+    margin-top: 10px;
+    clear: both;
+}
+
+.end >p {
+    line-height: 25px;
+}
+
+.end {
+    margin-left: 50px;
+    margin-top: 20px;
 }
