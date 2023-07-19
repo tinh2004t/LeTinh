@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 350px auto auto 100px;
+    row-gap: 5px;
+    grid-template-areas: 
+    " header header"
+    "nav nav"
+    "container container"
+    "footer footer";
+}
+
+/* Header */
+header {
+    grid-area: header;
+    background-image: url("https://hanoicomputercdn.com/media/banner/03_Jul26e8fdf245fd21cc0207ee5ce592506e.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 350px -150px;
+    background-color: black;
+   
+}
+
+.logo {
+    line-height: 350px;
+    display: block;
+
+}
+
+.logo >img {
+    margin-left: 100px;
+    font-size: 100px;
+    width: 300px;
+    height: auto;
+}
+
+/* Nav */
+.nav {
+    grid-area: nav;
+}
+
+.nav >ul {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav >ul >li {
+    list-style: none;
+    
+}
+
+.nav-btn {
+    clear: both;
+}
+
+.nav-btn >a {
+    font-size: 120%;
+    display: block;
+    line-height: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 50px;
+    border-right: solid 2px rgb(126, 124, 124);
+    
+}
+
+.search {
+    font-size: 130%;
+    border: solid 1px;
+    
+}
+
+.sr {
+    margin-right: 30px;
+    left: 40px;
+    top:359px;
+}
+
+.search-btn {
+    background-color: rgb(204, 202, 202);
+    font-size: 130%;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: solid 1px;
+    border-radius: 100px;
+    padding: 3px;
+}
+
+.search-btn >i {
+    width: 26px;
+    color: black;
+
+}
+
+.cart {
+    margin-left: 20px;
+    font-size: 26px;
+}
+
+.cart >a {
+    color: black;
+}
+
+.drop {
+    width: 300px;
+    display: none;
+    list-style: none;
+    position: absolute;
+    border: solid 1px black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0 10px 10px 10px;
+}
+
+.drop >li {
+    margin: 10px;
+    padding-right: 40px;
+    margin-left: 30px;
+}
+
+.drop >li >a {
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+}
+
+.nav-btn:hover {
+    background-color: rgb(206, 203, 203);
+}
+
+.nav-btn:hover .drop {
+    display: block;
+}
+
+
+.search-btn:hover {
+    background-color: rgb(134, 131, 131);
+}
+
+.cart >a:hover {
+    color: rgb(71, 70, 70);
+}
+
+.drop >li >a:hover {
+    color:  rgb(98, 169, 211);
+}
+
+/* Content */
+.container {
+    grid-area: container;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+}
+
