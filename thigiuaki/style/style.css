@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* https://www.canva.com/design/DAFphCvctkA/1sJ3oaW6qcs8kVWZOYvzzA/edit */
+
+/* Home */
+
+.home {
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr 1fr;
+    grid-template-rows: 40px 100px 500px 100px 100px;
+    grid-template-areas: 
+            "toppage toppage toppage toppage"
+            "nav nav nav nav"
+            "banner banner banner banner"
+            "para item1 item2 item3"
+            "btn item1 item2 item3"
+        ;
+}
+
+
+/* Top page */
+.top_page {
+    grid-area: toppage;
+    line-height: 40px;
+    border-bottom: solid 1px rgb(202, 197, 197);
+    
+}
+
+.hotro {
+    display: block;
+}
+
+.hover-hotro {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: solid 1px #333e48;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hotro >span {
+    padding: auto;
+}
+
+.hover-hotro >a {
+    margin-left: 10px;
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    color: #333e48;
+}
+
+.top_page >div {
+    margin: 0 20px;
+    display: flex;
+    
+}
+
+.hotro:hover .hover-hotro {
+    display: block;
+    cursor: pointer;
+}
+
+
+/* Nav home */
+.nav_home {
+    grid-area: nav;
+}
+
+/* Banner */
+.banner_home {
+    margin: 0 110px;
+    grid-area: banner;
+    background-image: url(/img/home/banner.webp);
+    background-size: cover;
+}
+
+.intro_home {
+    grid-area: para;
+
+}
+
+.item-home1 {
+    grid-area: item1;
+    background-image: url(/img/home/a78-720-220-720x220.webp);
+    background-position-x: -50px;
+
+}
+
+.item-home2 {
+    grid-area: item2;
+    background-image: url(/img/home/C53-720-220-720x220-10.webp);
+    background-position-x: -30px;
+    margin: 10px 10px;
+}
+
+.item-home3 {
+    grid-area: item3;
+    background-image: url(/img/home/iP14PRM-720-220-720x220.webp);
+    background-position-x: -30px;
+    margin-right: 110px;
+}
+
+.item-home1, .item-home2, .item-home3 {
+    margin-top: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn_home {
+    grid-area: btn;
+}
