@@ -7,29 +7,134 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="img/">
     <script src="https://kit.fontawesome.com/f89b6a7545.js" crossorigin="anonymous"></script>
+    <script src="style/javascript.js"></script>
     <title>MOBILE STORE</title>
 </head>
 <body>
     <div class="home">
         <div class="top_page">
-            <div>
+            <div class="sdt">
                 <i class="fa-solid fa-phone"></i> Gọi mua hàng: <b>090.174.7357</b>
-                <div class="hotro">
-                    <span><i class="far fa-life-ring"></i> Hỗ trợ</span>
-                    <div class="hover-hotro">
-                       <a href="#" >Chính sách, quy định chung</a>
-                       <a href="#" >Giao hàng 2h – HACOM Faster</a>
-                       <a href="#">Chính sách bảo hành</a>
-                       <a href="#" >Chính sách cho doanh nghiệp</a>
-                       <a href="#" >Chính sách hàng chính hãng</a>
-                       <a href="#" >Chính sách nhập lại tính phí</a>
-                       <a href="#" >Hướng dẫn mua hàng trực tuyến</a>
-                       <a href="#" >Hướng dẫn thanh toán</a>
-                       <a href="#" >Hướng dẫn mua hàng trả góp</a>
-                    </div>
             </div>
+            <div class="right_toppage">
+                <div class="hoverbtn">
+                    <a href="#"><i class="far fa-life-ring"></i> Hỗ trợ</a>
+                        <div class="hover-hotro top_drop_down">
+                            <a href="#" >Chính sách, quy định chung</a>
+                            <a href="#" >Giao hàng 2h – Faster</a>
+                            <a href="#">Chính sách bảo hành</a>
+                            <a href="#" >Chính sách cho doanh nghiệp</a>
+                            <a href="#" >Chính sách hàng chính hãng</a>
+                            <a href="#" >Chính sách nhập lại tính phí</a>
+                            <a href="#" >Hướng dẫn mua hàng trực tuyến</a>
+                            <a href="#" >Hướng dẫn thanh toán</a>
+                            <a href="#" >Hướng dẫn mua hàng trả góp</a>
+                         </div>
+                </div>
                 
+                <div class="hoverbtn">
+                    <a href="#"><i class="far fa-handshake"></i> Trung tâm dịch vụ</a>
+                    <div class="border-hover-ttdv top_drop_down">
+                        <a href="#" >Tra cứu đơn hàng</a>
+                        <a href="#" >Tra cứu bảo hành</a>
+                        <a href="#" >In hóa đơn điện tử</a>
+                        <a href="#" >Góp ý, khiếu nại</a>
+                        <a href="#" >Bảng giá vật tư và dịch vụ lắp đặt</a>
+                    </div>
+                </div>
+
+                <div class="hoverbtn">
+                    <a href="#"><i class="fa-solid fa-gift"></i> Khuyến mại</a>
+                    <div class="border-hover-khuyen-mai top_drop_down">
+                       <a href="#">Khuyến mại Laptop</a>
+                       <a href="#">Khuyến mại PC</a>
+                       <a href="#">Khuyến mại linh kiện</a>
+                       <a href="#">Khuyến mại phụ kiện</a>
+                       <a href="#">Khuyến mại Học sinh - Sinh viên</a>
+                       <a href="#">Khuyến mại Giao hàng siêu tốc 2h và miễn phí</a>
+                       <a href="#">Khuyến mại Vệ sinh PC/Laptop miễn phí</a>
+                       <a href="#">Khuyến mại Ưu đãi hình thức thanh toán</a>
+                    </div>
+                </div>
+                <div class="hoverbtn">
+                    <a href="#"><i class="fa-solid fa-user"></i> Tài khoản</a>
+                    <div class="top_drop_down user">
+                        <button class="login_btn" onclick="showpopupLogin()">Đăng nhập</button>
+                        <button class="signin_btn" onclick="showpopupSignin ()">Đăng kí</button>
+                        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1627494923%3A1690356746345436&continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&hl=vi&ifkv=AeDOFXglrxa-0QBbjcr0qm6AL-PRQIwu38P5MPn6kN48E0jyn7pKEda4yeyGoTp8D953g71E8Os2Kg&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Đăng nhập bằng Google</a>
+                        <a href="https://vi-vn.facebook.com/login/device-based/regular/login/?login_attempt=1">Đăng nhập bằng Faebook</a>
+                    </div>
+                </div>
             </div>
+            <!-- Signin -->
+            <div id="bg_popup" onclick="closepopup()"></div>
+            <div class="popup_signin popup" id="popupsignin_close">
+                <div class="close_popup" onclick="closepopupSignin()">
+                    <span><i class="fa-solid fa-x"></i></span>
+                </div>
+                <table class="popup_content">
+                    <caption>Đăng kí</caption>
+                    <tr>
+                        <td>Họ Tên: </td>
+                        <td><input type="text" placeholder="Lê Tuấn Tình"></td>
+                    </tr>
+                    <tr>
+                        <td>Ngày Sinh: </td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Tên Đăng Nhập: </td>
+                        <td><input type="text" placeholder="abcd1234"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email: </td>
+                        <td><input type="email" name="email" id="" placeholder="abcd1234@xyz.com"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mật Khẩu:</td>
+                        <td><input type="password" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Nhập Lại Mật Khẩu:</td>
+                        <td><input type="password" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Đăng kí" class="btnpopup"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bạn đã có tài khoản? Ấn <a href="#" style="color: tomato;">Đăng Nhập</a>!</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Login -->
+            <div class="popup_login popup" id="popuplogin_close">
+                <div class="close_popup" onclick="closepopupLogin()">
+                    <span><i class="fa-solid fa-x"></i></span>
+                </div>
+                <table class="popup_content">
+                    <caption>Đăng Nhập</caption>
+                        <td>Tên Đăng Nhập: </td>
+                        <td><input type="text" placeholder="abcd1234"></td>
+                    </tr>
+                    <tr>
+                        <td>Mật Khẩu:</td>
+                        <td><input type="password" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Đăng kí" class="btnpopup"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bạn chưa có tài khoản? Ấn <a href="" style="color: tomato;">Đăng kí</a>!</td>
+                    </tr>
+                </table>
+            </div>
+            
         </div>
 
         <div class="nav_home">
