@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    background-color: #4877a3;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    color: white;
+}
+
+header >p{
+    margin-left: 200px;
+}
+
+.cart {
+    width: 100px;
+    margin: 0 100px;
+    background-image: url(/image/cart.png);
+    background-position-x: -94px;
+    line-height: 100px;
+    color: red;
+    text-align: center;
+}
+
+input[type="search"] {
+    font-size: 24px;
+    border: none;
+    border-right: 1px solid #4877a3;
+
+}
+
+.search >p {
+    padding:0 10px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #4877a3;
+}
+
+/* Content */
+
+.content {
+    margin: 10px 30px;
+    display: FLEX;
+    height: 100%;
+}
+
+.left_content {
+
+    width: 80%;
+    margin-right: 10px;
+    display: block;
+    height: 100%;
+}
+
+.right_content {
+    display: block;
+    width: 15%;
+    height: 100%;
+}
+
+.list_danh_muc >a {
+    display: block;
+    padding: 8px;
+    margin: 0 5px;
+}
+
+.list_danh_muc >a:hover {
+    color: red;
+}
+
+.danh_muc {
+    border-bottom: solid 1px #D0D0D0;
+    padding: 10px;
+}
+
+.bang {
+    border: solid 1px #D0D0D0;
+}
+
+.tren, .duoi {
+    display: flex;
+}
+
+.item {
+    margin: 20px;
+    border: 1px solid #D0D0D0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.right_content >img {
+    margin-top: 15px;
+}
+
+
+.footer {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #4877a3;
+}
+
+
+    
